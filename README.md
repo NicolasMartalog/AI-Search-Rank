@@ -1,6 +1,7 @@
 # AI Search Rank
 
 A BERT-based semantic search and question similarity model that finds similar questions using deep learning.
+Created an API endpoint to test the model as well.
 
 ## Features
 - Semantic search using BERT embeddings
@@ -39,6 +40,12 @@ python src/train.py
 Find similar questions using the trained model:
 ```
 python src/infer.py
+``` 
+
+### 4. API Testing
+Run the API:
+```
+uvicorn api:app --reload
 ```
 
 ## Model Architecture
